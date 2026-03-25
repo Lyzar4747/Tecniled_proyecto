@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECNILED</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="logo">TECNILED</h2>
+
+            <ul>
+                <li class="menu-item active" data-view="dashboard">Dashboard</li>
+                <li class="menu-item" data-view="productos">Gestión de productos</li>
+                <li class="menu-item" data-view="solicitudes">Solicitudes de compra</li>
+                <li class="menu-item" data-view="config"> Configuración</li>
+            </ul>
+        </aside>
+
+        <!-- Contenido -->
+        <main class="main">
+
+            <!-- Dashboard -->
+            <section id="dashboard" class="view active">
+                <h1>Dashboard</h1>
+
+                <div class="cards">
+                    <div class="card">
+                        <p>Total Productos</p>
+                        <h2>19</h2>
+                    </div>
+                    <div class="card">
+                        <p>Solicitudes Pendientes</p>
+                        <h2>0</h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Productos -->
+            <section id="productos" class="view">
+                <h1>Gestión de productos</h1>
+
+                <div class="toolbar">
+                    <input type="text" placeholder="Buscar producto...">
+                    <button class="btn">+ Añadir Producto</button>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Categoría</th>
+                            <th>Stock</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Interruptor Termomagnético</td>
+                            <td>Eléctricos</td>
+                            <td class="ok">12</td>
+                            <td>$12</td>
+                        </tr>
+                        <tr>
+                            <td>Cinta de Aislar</td>
+                            <td>Eléctricos</td>
+                            <td class="ok">100</td>
+                            <td>$3.5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Solicitudes -->
+            <section id="solicitudes" class="view">
+                <h1>Solicitudes de compra</h1>
+
+                <div class="toolbar">
+                    <input type="text" placeholder="Buscar solicitud...">
+                </div>
+
+                <div class="empty">
+                    No se encontraron solicitudes.
+                </div>
+            </section>
+
+            <!-- Config -->
+            <section id="config" class="view">
+                <h1>Configuración</h1>
+                <p>Aquí irían las opciones del sistema.</p>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="../js/admin.js"></script>
+</body>
+
+</html>
