@@ -1,11 +1,360 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TECNILED</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
-    
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#">
+      <div class="logo-icon"><i class="fa-solid fa-lightbulb"></i></div>
+      <span class="logo-text">TECNI<span>LED</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#"><i class="fa-solid fa-house"></i> Inicio</a></li>
+      <li><a href="#">Categorías <i class="fa-solid fa-chevron-down"></i></a></li>
+      <li><a href="#" class="nav-ofertas"><i class="fa-solid fa-tag"></i> Ofertas</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Buscar productos..." />
+      </div>
+      <div class="nav-icon-btn"><i class="fa-solid fa-moon"></i></div>
+      <div class="nav-icon-btn"><i class="fa-regular fa-user"></i></div>
+      <div class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="badge"><i class="fa-solid fa-bolt"></i> Expertos en Iluminación</div>
+      <h1 class="hero-title">
+        Ilumina tu<br>mundo con<br>
+        <span class="highlight">tecnología LED</span>
+      </h1>
+      <p class="hero-desc">
+        En TECNILED ofrecemos las mejores soluciones de iluminación
+        para interiores, exteriores y productos industriales.
+      </p>
+      <div class="hero-buttons">
+        <a class="btn-primary" href="#">Explorar Productos <i class="fa-solid fa-arrow-right"></i></a>
+        <a class="btn-secondary" href="#">Crear Cuenta</a>
+      </div>
+      <div class="hero-divider"></div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">20</div>
+          <div class="stat-label">Productos Disponibles</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">94%</div>
+          <div class="stat-label">Satisfacción</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">Soporte</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-wrap">
+        <img src="cocina.jpg" alt="Cocina LED" />
+      </div>
+      <div class="hero-card">
+        <i class="fa-solid fa-lightbulb hero-card-icon"></i>
+        <div class="hero-card-title">Ahorro Energético</div>
+        <div class="hero-card-text">Nuestros sistemas reducen hasta un 80% el consumo eléctrico.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTAS -->
+  <section class="ofertas">
+    <div class="ofertas-header">
+      <div class="ofertas-left">
+        <div class="badge-ofertas"><i class="fa-solid fa-tag"></i> Ofertas Especiales</div>
+        <h2 class="ofertas-title">Precios increíbles por <span class="highlight">tiempo<br>limitado</span></h2>
+        <p class="ofertas-desc">
+          Aprovecha nuestros descuentos en productos seleccionados para renovar
+          la iluminación de tu hogar o empresa.
+        </p>
+      </div>
+      <div   v class="ofertas-right">
+        <a href="#" class="btn-ver-todos">Ver todos los productos <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="productos-grid">
+
+      <div class="producto-card">
+        <div class="producto-img-wrap">
+          <span class="oferta-tag">OFERTA</span>
+          <img src="interruptor.jpg" alt="Interruptor Termomagnético 20A" />
+        </div>
+        <div class="producto-info">
+          <div class="producto-meta">
+            <span class="categoria electricos">ELECTRICOS</span>
+            <span class="rating"><i class="fa-solid fa-star"></i> 4.5</span>
+          </div>
+          <h3 class="producto-nombre">Interruptor Termomagnético 20A</h3>
+          <span class="disponible">Disponible</span>
+          <div class="producto-precio-row">
+            <div class="precios">
+              <span class="precio-antes">$15.50</span>
+              <span class="precio-actual">$12.00</span>
+            </div>
+            <button class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="producto-card">
+        <div class="producto-img-wrap">
+          <span class="oferta-tag">OFERTA</span>
+          <img src="lampara.jpg" alt="Lámpara Colgante Moderna" />
+        </div>
+        <div class="producto-info">
+          <div class="producto-meta">
+            <span class="categoria interiores">INTERIORES</span>
+            <span class="rating"><i class="fa-solid fa-star"></i> 5</span>
+          </div>
+          <h3 class="producto-nombre">Lámpara Colgante Moderna</h3>
+          <span class="disponible">Disponible</span>
+          <div class="producto-precio-row">
+            <div class="precios">
+              <span class="precio-antes">$85.00</span>
+              <span class="precio-actual">$65.00</span>
+            </div>
+            <button class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="producto-card">
+        <div class="producto-img-wrap">
+          <span class="oferta-tag">OFERTA</span>
+          <img src="tira-led.jpg" alt="Tira LED RGB 5 Metros" />
+        </div>
+        <div class="producto-info">
+          <div class="producto-meta">
+            <span class="categoria interiores">INTERIORES</span>
+            <span class="rating"><i class="fa-solid fa-star"></i> 4.8</span>
+          </div>
+          <h3 class="producto-nombre">Tira LED RGB 5 Metros</h3>
+          <span class="disponible">Disponible</span>
+          <div class="producto-precio-row">
+            <div class="precios">
+              <span class="precio-antes">$18.00</span>
+              <span class="precio-actual">$15.00</span>
+            </div>
+            <button class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="producto-card">
+        <div class="producto-img-wrap">
+          <span class="oferta-tag">OFERTA</span>
+          <img src="taladro.jpg" alt="Taladro Inalámbrico 20V" />
+        </div>
+        <div class="producto-info">
+          <div class="producto-meta">
+            <span class="categoria ferreteria">FERRETERIA</span>
+            <span class="rating"><i class="fa-solid fa-star"></i> 5</span>
+          </div>
+          <h3 class="producto-nombre">Taladro Inalámbrico 20V</h3>
+          <span class="disponible">Disponible</span>
+          <div class="producto-precio-row">
+            <div class="precios">
+              <span class="precio-antes">$120.00</span>
+              <span class="precio-actual">$99.00</span>
+            </div>
+            <button class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ¿POR QUÉ TECNILED? -->
+  <section class="porque">
+    <div class="porque-left">
+      <h2 class="porque-title">¿Por qué elegir<br><span class="highlight">TECNILED</span>?</h2>
+      <p class="porque-desc">
+        No solo vendemos focos, proveemos soluciones de iluminación que
+        transforman espacios y optimizan el consumo energético.
+      </p>
+      <div class="porque-features">
+        <div class="feature-item"><i class="fa-solid fa-circle-check"></i><span>Ahorro de hasta 80% en consumo eléctrico</span></div>
+        <div class="feature-item"><i class="fa-solid fa-circle-check"></i><span>Mayor vida útil en todos los productos LED</span></div>
+        <div class="feature-item"><i class="fa-solid fa-circle-check"></i><span>Garantía extendida por 3 años</span></div>
+        <div class="feature-item"><i class="fa-solid fa-circle-check"></i><span>Asesoría técnica personalizada gratis</span></div>
+        <div class="feature-item"><i class="fa-solid fa-circle-check"></i><span>Envíos a todo el país</span></div>
+        <div class="feature-item"><i class="fa-solid fa-circle-check"></i><span>Instalación profesional certificada</span></div>
+      </div>
+      <a href="#" class="btn-cotizar">Cotizar Productos</a>
+    </div>
+    <div class="porque-right">
+      <div class="porque-img-wrap">
+        <img src="../img/banners/Category-6.webp" alt="Sala iluminada" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contacto">
+    <div class="contacto-left">
+      <h2 class="contacto-title">Ponte en <span class="highlight">Contacto</span></h2>
+      <p class="contacto-desc">
+        ¿Tienes una idea en mente? Escríbenos y uno de nuestros asesores
+        especializados te contactará a la brevedad.
+      </p>
+      <div class="contacto-items">
+        <div class="contacto-item">
+          <div class="contacto-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <div class="contacto-item-title">Nuestra Oficina</div>
+            <div class="contacto-item-text">Av. Principal 123, Parque Industrial, Ciudad, País</div>
+          </div>
+        </div>
+        <div class="contacto-item">
+          <div class="contacto-icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <div class="contacto-item-title">Llámanos</div>
+            <div class="contacto-item-text">+1 234 567 8900</div>
+            <div class="contacto-item-text">Lunes a Viernes, 9am - 6pm</div>
+          </div>
+        </div>
+        <div class="contacto-item">
+          <div class="contacto-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <div class="contacto-item-title">Correo Electrónico</div>
+            <div class="contacto-item-text">contacto@tecniled.com</div>
+            <div class="contacto-item-text">ventas@tecniled.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contacto-right">
+      <div class="contacto-form-card">
+        <h3 class="form-title">Envíanos un Mensaje</h3>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" placeholder="Juan Pérez" />
+          </div>
+          <div class="form-group">
+            <label>Empresa</label>
+            <input type="text" placeholder="Opcional" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="juan@ejemplo.com" />
+        </div>
+        <div class="form-group">
+          <label>Mensaje</label>
+          <textarea placeholder="¿En qué podemos ayudarte?"></textarea>
+        </div>
+        <button class="btn-enviar">Enviar Mensaje</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="servicios">
+    <div class="servicios-header">
+      <h2 class="servicios-title">Nuestros <span class="highlight">Servicios</span></h2>
+      <p class="servicios-desc">
+        Ofrecemos soluciones completas en iluminación y electricidad para cualquier tipo de
+        necesidad, asegurando calidad y garantía.
+      </p>
+    </div>
+    <div class="servicios-grid">
+      <div class="servicio-card">
+        <div class="servicio-icon icon-blue"><i class="fa-solid fa-house"></i></div>
+        <h3 class="servicio-nombre">Instalación Residencial</h3>
+        <p class="servicio-texto">Diseñamos e instalamos sistemas de iluminación para hacer tu hogar más acogedor y moderno.</p>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-icon icon-amber"><i class="fa-solid fa-industry"></i></div>
+        <h3 class="servicio-nombre">Soluciones Industriales</h3>
+        <p class="servicio-texto">Productos de alta potencia para naves industriales, bodegas y grandes superficies.</p>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-icon icon-green"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <h3 class="servicio-nombre">Mantenimiento Eléctrico</h3>
+        <p class="servicio-texto">Revisión y reparación de cableado, tableros y sistemas eléctricos generales.</p>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-icon icon-purple"><i class="fa-solid fa-bolt"></i></div>
+        <h3 class="servicio-nombre">Eficiencia Energética</h3>
+        <p class="servicio-texto">Auditorías y transición a LED para reducir drásticamente el consumo eléctrico.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-icon"><i class="fa-solid fa-bolt"></i></div>
+          <span class="footer-logo-text">TECNI<span>LED</span></span>
+        </div>
+        <p class="footer-brand-desc">
+          Iluminando tus espacios con la mejor tecnología y eficiencia. Calidad garantizada en cada producto.
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Categorías</h4>
+        <ul class="footer-links">
+          <li><a href="#">Eléctricos</a></li>
+          <li><a href="#">Interiores</a></li>
+          <li><a href="#">Ferretería</a></li>
+          <li><a href="#">Iluminación</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Empresa</h4>
+        <ul class="footer-links">
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#">Productos Destacados</a></li>
+          <li><a href="#">Catálogo</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Contacto</h4>
+        <ul class="footer-contact-list">
+          <li><i class="fa-solid fa-location-dot fc-icon"></i> Av. Principal 123, Ciudad, País</li>
+          <li><i class="fa-solid fa-phone fc-icon"></i> +1 234 567 890</li>
+          <li><i class="fa-solid fa-envelope fc-icon"></i> contacto@tecniled.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 TECNILED. Todos los derechos reservados.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacidad</a>
+        <a href="#">Términos</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
